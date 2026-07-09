@@ -1257,10 +1257,10 @@
         const vid = document.getElementById("mainVideo");
 
         vid.src = "v1.mp4";
-        vid.muted = false;
+        vid.muted = true;
         vid.controls = true;
 
-        music.pause();
+        //music.pause();
         vid.currentTime = 0;
         vid.play().catch(() => {});
 
