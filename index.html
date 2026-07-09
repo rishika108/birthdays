@@ -1018,6 +1018,7 @@
 
     function checkPin() {
         if (enteredPin === CORRECT_PIN) {
+             music.play().catch(() => {});
             unlock();
         } else {
             wrongEl.textContent = "Not this one 💛 Think again…";
